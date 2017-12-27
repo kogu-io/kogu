@@ -12,19 +12,12 @@ phase = 0
 
 Kogu.load_parameters()
 
-print("Hyperparameters")
-print("===============")
-print("iterations:", iterations)
-print("step_size:", step_size)
-print("amplitude:", amplitude)
-print("phase:", phase)
-
 Kogu.send_hyperparameters({
     "iterations": iterations,
     "step_size": step_size,
     "amplitude": amplitude,
     "phase": phase,
-})
+}, output=True)
 
 Kogu.plot(plot_type="line", y_label="sin", series=["sin"], name="Sine")
 
