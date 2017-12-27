@@ -16,7 +16,10 @@ tol = 0.0001   # Tolerance for stopping criterion
 digits = datasets.load_digits()
 
 Kogu.load_parameters()
-Kogu.send_hyperparameters(["gamma", "tol"], [gamma, tol])
+Kogu.send_hyperparameters({
+    "gamma": gamma,
+    "tol": tol,
+})
 
 # The data that we are interested in is made of 8x8 images of digits, let's
 # have a look at the first 4 images, stored in the `images` attribute of the
@@ -72,4 +75,6 @@ Kogu.upload(img_fname)
 Kogu.upload(model_fname)
 
 # Send final score of the model to Kogu
-Kogu.metrics("score", metrics.f1_score(expected, predicted, average="weighted"))
+Kogu.metrics({
+    "score": metrics.f1_score(expected, predicted, average="weighted"),
+})

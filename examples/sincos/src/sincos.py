@@ -19,9 +19,12 @@ print("step_size:", step_size)
 print("amplitude:", amplitude)
 print("phase:", phase)
 
-Kogu.send_hyperparameters(
-    ["iterations", "step_size", "amplitude", "phase"],
-    [iterations, step_size, amplitude, phase])
+Kogu.send_hyperparameters({
+    "iterations": iterations,
+    "step_size": step_size,
+    "amplitude": amplitude,
+    "phase": phase,
+})
 
 Kogu.plot(plot_type="line", y_label="sin", series=["sin"], name="Sine")
 
@@ -30,9 +33,13 @@ for i in range(iterations):
     cos = amplitude*math.cos(angle + phase)
     sin = amplitude*math.sin(angle + phase)
     score = sin + cos
-    Kogu.metrics(
-        ["angle", "sin", "cos"],
-        [angle, sin, cos], i)
+    Kogu.metrics({
+        "angle": angle,
+        "sin": sin,
+        "cos": cos,
+    }, iteration=i)
     time.sleep(0.1)
 
-Kogu.metrics("score", score)
+Kogu.metrics({
+    "score": score,
+})
