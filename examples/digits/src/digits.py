@@ -16,7 +16,7 @@ tol = 0.0001   # Tolerance for stopping criterion
 digits = datasets.load_digits()
 
 Kogu.load_parameters()
-Kogu.send_hyperparameters({
+Kogu.update_parameters({
     "gamma": gamma,
     "tol": tol,
 })
