@@ -12,7 +12,7 @@ phase = 0
 
 Kogu.load_parameters()
 
-Kogu.send_hyperparameters({
+Kogu.update_parameters({
     "iterations": iterations,
     "step_size": step_size,
     "amplitude": amplitude,
