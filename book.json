@@ -2,7 +2,7 @@
     "plugins": ["github", "ga"],
     "pluginsConfig": {
         "github": {
-          "url": "https://github.com/pro-ai/kogu/"
+          "url": "https://github.com/kogu-io/kogu/"
         },
         "ga": {
             "token": "UA-42253306-2"

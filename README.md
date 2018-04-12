@@ -5,7 +5,13 @@ With Kogu's help you can keep track and monitor your experiments. This guide wil
 
 # Getting Kogu
 
-Kogu has platform installers for Windows, macOS and Ubuntu Linux, as well as plain binary archives. All the downloads are available at our [install location](https://github.com/kogu-io/kogu/releases).  
+Kogu has platform installers for Windows, macOS and Ubuntu Linux, as well as plain binary archives. All the downloads are available at our [install location](https://github.com/kogu-io/kogu/releases). 
+
+Alternatively you can use Homebrew to install Kogu on macOS.
+```cli
+$ brew tap kogu-io/kogu
+$ brew install kogu
+```
 
 # Kogu components
 

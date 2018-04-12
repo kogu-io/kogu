@@ -1,5 +1,5 @@
 # Python helper library
-This convenience library can be used to integrate your scripts with Kogu. Methods do not create dependency to Kogu infrastructure. The integration is performed using specially formatted standard output lines. With Kogu methods in the script, it can still be executed without kogu. In this case the methods append nothing to output.
+This convenience library can be used to integrate your scripts with Kogu. Methods do not create dependency to Kogu infrastructure. The integration is performed using specially formatted standard output lines. With Kogu methods in the script, it can still be executed without Kogu. In this case the methods append nothing to output.
 
 # Installation
 You can install the library using ```pip``` by calling: 
@@ -85,8 +85,7 @@ Kogu.metrics(dic, iteration=-1)
 ```
 Arguments:
 * `dic` – Key-value set of metrics to report. All the keys must be [valid identifiers](#identifiers).
-* `iteration` – Optional iteration number (integer) to be logged with the metrics. The default 
-value of -1 indicates the metrics are result.
+* `iteration` – Optional iteration number (integer) to be logged with the metrics. The default value of -1 indicates the metrics are the final results.
 
 # <div id='tag'></div>`tag`
 > Adds a tag to experiment.
@@ -118,7 +117,7 @@ Arguments:
 * `comment` – Text to add as a comment.
 
 # <div id='upload'></div>`upload`
-> Creates Kogu specific File upload line to calling script stdout. The file is uploaded to the kogu server after the script execution has successfully completed.
+> Creates Kogu specific File upload line to calling script stdout. The file is uploaded to the Kogu server after the script execution has successfully completed.
 
 ```python
 Kogu.upload(filename)
