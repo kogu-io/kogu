@@ -45,7 +45,7 @@ Now open the web interface at `http://localhost:8193` and click on the experimen
 
 ---
 
-These are just a few things you can do with kogu. To learn more – follow the rest of the docs. For example if you are running your experiments with different [parameters](cli.html) – kogu can help you log and keep track of them. Or check out how you can easily plot real-time graphs or upload results with Kogu using [Python library](python-library.html).
+These are just a few things you can do with kogu. To learn more – follow the rest of the docs. For example if you are running your experiments with different [parameters](cli.md) – kogu can help you log and keep track of them. Or check out how you can easily plot real-time graphs or upload results with Kogu using [Python library](python-library.md).
 
 #### Feedback
 Please send us feedback at [hello@kogu.io](mailto:hello@kogu.io) or create an issue on [GitHub](https://github.com/kogu-io/kogu/issues).
