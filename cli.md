@@ -20,13 +20,13 @@ Flags:
 <br><br>
 
 ```bash
-kogu run script-path [--name experiment-name] [--parameter name=value] [--exec executable-name] [--args executable-arguments] [--verbose true|false] [--help]
+kogu run script-path [--name experiment-name] [--parameter name=value ...] [--exec executable-name] [--args executable-arguments] [--verbose true|false] [--help]
 ```
 > Execute new experiment
 
 Flags:
 * `-n`, `--name experiment-name` – experiment name
-* `-p`, `--parameter name=value` – parameter value
+* `-p`, `--parameter name=value ...` – parameter name and value
 * `-e`, `--exec executable-name` – executable name
 * `-a`, `--args executable-arguments` – executable arguments
 * `-v`, `--verbose true|false` – verbose output (default true)
@@ -44,7 +44,7 @@ Flags:
 * `-c`, `--csv` – CSV format
 * `-j`, `--json` – JSON format
 * `-p`, `--pretty` – pretty print JSON
-* `-v`, `--verbosity verbosity-level` – verbosity level 0 – 4 (default 2)
+* `-v`, `--verbosity verbosity-level` – verbosity level 1 – 4 (default 2)
 * `-h`, `--help` – command-specific help
 
 <br><br>
