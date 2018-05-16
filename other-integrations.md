@@ -36,21 +36,19 @@ This defines 6 parameters from ```a``` to ```e```. Parameters must either be num
 This defines metrics calculated by the training experiment to be stored to Kogu. ```iteration``` must be numeric. Iteration value ```-1``` has special meaning - these are the final results of experiment. ```metrics``` contains tuples which may have numeric, boolean or text values. You can send several objects with the same iteration value in that case metrics are merged together, metrics sent later take precedence. 
 
 **Example:**
-Two metrics printed in 
+Two metrics passed as: 
 ```json
-{"metric":{"iteration":0, "metrics":{"a":3, "b":-2.5 }}}
+{"metric":{"iteration":0, "metrics":{"a":3, "b":-2.5}}}
 
 {"metric":{"iteration":0, "metrics":{"b":5.5, "c":true}}}
 ```
-will result the following metrics:
+will result the following metrics for iteration 0:
 
-```key``` | ```value```
+key | value
 -- | --
-```a``` | ```3```
-```b``` | ```5.5```
-```c``` | ```true```
-
-for iteration ```0```
+a | 3
+b | 5.5
+c | true
 
 ## Plots
 ```json
