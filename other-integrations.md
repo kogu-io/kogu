@@ -19,7 +19,7 @@ The parameters are stored as input (hyper)parameters for the experiment
     }
 }
 ```
-This defines 6 parameters from ```a``` to ```e```. Parameters must either be numbers, booleans, text or arrays. Numeric, boolean and text arrays are supported. The array type is determined by the first array element.
+This defines 5 parameters from ```a``` to ```e```. Parameters must either be numbers, booleans, text or arrays. Numeric, boolean and text arrays are supported. The array type is determined by the first array element.
 
 ## Metrics
 ```json

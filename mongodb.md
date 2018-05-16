@@ -14,8 +14,8 @@ You may want to define this parameter in your environment to ensure that it stay
 **Note** that the information previously stored to Kogu default database is not uploaded to the MongoDB!
 
 ## Connecting several Kogu servers to one MongoDB database
-In principle this is shold work however there are limitations.
-All experiments would be visible and fully accessible (this includes deletion) in all Kogu servers. It is not possible to easily understand which Kogu server created the experiment. New experiments created from other server instances would appear in web-browser only after page reload. Data for these experiments will not be updated in real time. 
+In principle this works, however there are limitations.
+All experiments would be visible and fully accessible (this includes deletion) in all Kogu servers. It is not possible to easily understand which Kogu server created the experiment. New experiments created from other server instances would appear in web-browser only after page reload. Data for these experiments is not updated in real time. 
 
 ### Using custom name for Kogu database
 The default name for Kogu database is "kogu". It is possible to override the database name with environment variable ```KOGU_DB_NAME```
