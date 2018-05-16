@@ -60,7 +60,7 @@ c | true
     }
 }
 ```
-This defines a real-time updated plot to be displayed on experiment details page. At the moment only ```line``` plot is supported. ```metrics``` is an array metric-names that are to be displayed on the plot (see Metrics above). At the moment only numeric metrics can be plotted.
+This defines a real-time updated plot to be displayed on experiment details page. At the moment only ```line``` plot is supported. ```metrics``` is an array of metric-names that are to be displayed on the plot (see Metrics above). At the moment only metrics with numeric values can be plotted.
 
 ## Comments
 ```json
@@ -96,7 +96,7 @@ Change experiment name to "New-Experiment"
 ```json
 { "fail": "Optional reason for the failure" }
 ```
-Mark experiment as "failed". You optoinally can specify the reason for the failure. Pass empty reason in case you do not want pass that info.
+Mark experiment as "failed". Optionally you can specify the reason for the failure. Pass empty reason in case you want to omit that data.
 
 
 # Passing information from Kogu to your script
@@ -110,3 +110,5 @@ This will pass parameters ```delta``` and ```gamma``` with corresponding values 
 ```json
 {"delta":0.0004, "gamma":-0.7}
 ``` 
+
+You can pass numeric, boolean, text and array parameters. Arrays can be either numeric, boolean or text arrays.
