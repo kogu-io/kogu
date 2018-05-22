@@ -5,3 +5,4 @@
 * [Python helper library](python-library.md)
 * [Integration with R and Julia](other-integrations.md)
 * [Running Kogu with MongoDB storage](mongodb.md)
+* [Running Kogu server on alternative port](server.md)
