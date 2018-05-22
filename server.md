@@ -9,7 +9,7 @@ It is possible to run Kogu server on other network interface and port besides th
 If you have chosen to run the server on other port or interface you can use the following environment variables to do so:
 
 Variable | Description | Default
-- | - | -
+--- | --- | ---
 KOGU_HOST | Network interface to bind the server to. Use 0.0.0.0 to bind to every available interface | localhost
 KOGU_PORT | Port to use for the server | 8193
 
