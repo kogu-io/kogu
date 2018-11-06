@@ -1,6 +1,8 @@
 # Running Kogu with MongoDB storage backend
 
-It is possible to use [MongoDB](https://www.mongodb.com/) as an alternative storage backend for your experiment data. MongoDB backend is used to store both experiment metadata and also attachments uploaded to Kogu server. 
+By default Kogu uses custom database to store the experiment results. Depending on your usage this format may not fit to your needs.
+
+It is possible to use [MongoDB](https://www.mongodb.com/) as an alternative storage backend for your experiment data. MongoDB backend is used to store both experiment metadata and also attachments uploaded to Kogu server.
 
 In order to do that define ```KOGU_DB``` environment variable for ```kogu-server``` with [MongoDB connection string](https://docs.mongodb.com/manual/reference/connection-string/) as a value.
 
@@ -23,4 +25,4 @@ The default name for Kogu database is "kogu". It is possible to override the dat
 ```bash
 $ export KOGU_DB_NAME=kogu-my-computer
 ```
-This, for example, allows to store several independent Kogu databases on a single MongoDB instance. 
+This, for example, allows to store several independent Kogu databases on a single MongoDB instance.

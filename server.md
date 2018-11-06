@@ -1,6 +1,6 @@
 # Running Kogu server on alternative interface and port
 
-It is possible to run Kogu server on other network interface and port besides the default (localhost:8193). 
+It is possible to run Kogu server on other network interface and port besides the default (localhost:8193).
 
 ***Important:***
 
