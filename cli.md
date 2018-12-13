@@ -71,11 +71,12 @@ Flags:
 <br><br>
 
 ```bash
-$ kogu upload experiment-hash file-path [--help]
+$ kogu upload experiment-hash file-path [--append] [--help]
 ```
 > Upload and attach file to experiment
 
 Flags:
+* `-a`, `--append` – append the file content to the existing file rather than store the content as a new file. Defaults to false.
 * `-h`, `--help` – command-specific help
 
 <br><br>
